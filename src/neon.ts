@@ -55,7 +55,7 @@ export class Neon {
 			}
 		} else if(typeof($var) === 'string' && !this.is_numeric($var)
 			&& !$var.match('~[\x00-\x1F]|^\d{4}|^(true|false|yes|no|on|off|null)\z~i')
-			&& $var.match('~^' + NeonDecoder.patterns[1] + '\z~x', $var) // 1 = literals
+			&& $var.match('~^' + NeonDecoder.patterns[1] + '\z~x') // 1 = literals
 			) {
 			return $var;
 
